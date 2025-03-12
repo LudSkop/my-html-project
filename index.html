@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій перший сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .red-text {
+            color: red;
+        }
+        .green-text {
+            color: green;
+        }
+        button {
+            font-size: 20px;  /* Збільшує текст */
+            padding: 15px 30px; /* Збільшує розмір кнопки */
+            border-radius: 10px; /* Закруглення кутів */
+            background-color: #4CAF50; /* Колір фону */
+            color: white; /* Колір тексту */
+            border: none; /* Прибрати рамку */
+            cursor: pointer; /* Додає зміну курсору */
+            margin: 10px; /* Додає відстань між кнопками */
+        }
+        button:hover {
+            background-color: #45a049; /* Колір при наведенні */
+        }
+        /* Стиль для круглих кнопок */
+        .round-button {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1><span class="red-text">Привіт, Владиславе та Олег!</span> Це мій перший сайт!</h1>
+    <h2><span class="red-text">Мені хочеться </span><span class="green-text">стати фронтенд розробником</span></h2>
+
+    <!-- Додаємо кнопки -->
+    <button onclick="alert('Ви натиснули першу кнопку!')">Натисни мене</button>
+    <button onclick="changeText()">Змінити текст</button>
+
+    <!-- Нові круглі кнопки -->
+    <button class="round-button" onclick="alert('Життя прекрасне!')">Життя</button>
+    <button class="round-button" onclick="alert('Радість усюди!')">Радість</button>
+
+    <script>
+        function changeText() {
+            document.querySelector("h2").innerHTML = '<span class="red-text">Я вже вчуся, щоб </span><span class="green-text">стати фронтенд розробником!</span>';
+        }
+    </script>
+</body>
+</html>
