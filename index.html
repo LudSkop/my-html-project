@@ -40,6 +40,13 @@
             justify-content: center;
 
         }
+        .button-container {
+    display: flex; /* Робить кнопки в ряд */
+    justify-content: center; /* Вирівнює кнопки по центру */
+    gap: 10px; /* Додає відстань між кнопками */
+    flex-wrap: wrap; /* Якщо кнопок багато, вони будуть переноситися */
+}
+
     </style>
 </head>
 <body>
@@ -55,9 +62,15 @@
     <button onclick="changeText()">Змінити текст</button>
 
     <!-- Нові круглі кнопки -->
+    <div class="button-container">
         <button class="round-button" onclick="alert('Вітаємо!')">Вітаємо</button>
     <button class="round-button" onclick="alert('Життя прекрасне!')">Життя</button>
     <button class="round-button" onclick="alert('Радість усюди!')">Радість</button>
+    <button class="round-button" onclick="alert('Радість !')">Докладніше</button>
+    <button class="round-button" onclick="alert('Радість !')">Пристрій</button>
+    <button class="round-button" onclick="alert('Радість!')">Новини</button>
+    </div>
+
 
     <script>
         function changeText() {
